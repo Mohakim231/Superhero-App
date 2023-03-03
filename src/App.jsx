@@ -4,6 +4,8 @@ import reactLogo from './assets/react.svg'
 import { NavBar } from './components'
 import { Aquaman, Best, Hero, Heroes, Home, NotFound } from './pages'
 
+import './styles.css'
+
 function App() {
 
   return (

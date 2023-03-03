@@ -1,0 +1,22 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 30px 20px;
+    background-color: aqua;
+    box-sizing: border-box;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list li{
+    margin-right: 2em;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.nav-list li:hover{
+    color: black;
+}
+.nav-item{
+    text-decoration: none;
+}
