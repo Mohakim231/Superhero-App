@@ -10,7 +10,7 @@ const Hero = () => {
   useEffect(() => {
     setLoading(true)
     async function loadSuperhero() {
-      const response = await fetch(`https://superheroapi.com/api/access-token/${id}`);
+      const response = await fetch(`https://superheroapi.com/api/access-token/${id}`, {mode: "cors"});
       const data = await response.json();
       setSuperhero(data)
       setLoading(false)
@@ -23,7 +23,7 @@ const Hero = () => {
   function displaySuperhero() {
     return <main>
       <h2>{superhero.name}</h2>
-      <img src={superhero.image.url} />
+      <img src={superhero.image["url"]} />
       <h3>Power scaling</h3>
       <ul>
         <li>Intelligence: {superhero.powerstats["intelligence"]}</li>
